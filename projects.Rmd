@@ -1,0 +1,59 @@
+---
+title: "Project"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+This is where you would perform your analysis of the ncdc_2024 data you have been given and also the individual data you will be assigned.
+I TOOK 
+Fundamentals in R programming [the know place](https://the knowplace.github.io) tought by [Ms Chiomah Ezeomah](https://chiomaezeomah.github.io).Initially, I felt uncertain about my progress in this course. However, as I delved deeper into the material, I found the concepts becoming more accessible. A key takeaway was learning to effectively utilize publicly available data to create visually appealing and easily interpretable graphs.
+
+The charts presented below are visualizations generated using publicly available NCDC 2024 data, which we were tasked with analyzing during the course. These graphs illustrate the number of cases recorded for various diseases such as cholera, CSM, Lassa fever, Measles, Mpox, and Yellow fever in Nigeria across each epidemiology week for 2024 
+
+```{r,include=FALSE}
+library(dplyr)
+library(ggplot2)
+library(readxl)
+```
+
+```{r,include=FALSE}
+ncdc_2024 <-read_xlsx("C:/Users/DELL/Documents/TKP RPROGRAMMING/ncdc_2024.xlsx")
+```
+
+## Line Plot
+```{r,echo=FALSE}
+ggplot(ncdc_2024, aes(x=epid.week, y=cases,color=disease))+
+  geom_line(linewidth = 0.5)+
+  scale_color_brewer(palette = "Dark2", label = c("Cholera", "CS Meningitis","Lassa Fever","Measles","Mpox","Yellow Fever"))+theme_bw()
+```
+
+The plot above is a line that visually represents the number of disease incidence reported for every epidemiology week of 2024. It depicts the fluctuating number of reported cases across the epidemiology weeks of the year. The plot reveals an intriguing dynamic between Lassa fever and cholera cases throughout 2024. The data suggests an inverse relationship, where weeks with higher Lassa fever case numbers tend to coincide with lower cholera case numbers, and vice versa.
+
+
+## Bar plot
+```{r,echo=FALSE}
+ggplot(ncdc_2024,aes(x = disease,y=cases,color = disease, fill = disease))+
+  geom_bar(stat = "identity", fill="#36454F",color = "#36454F")+
+  xlab(" disease")+theme(axis.title.x = element_text(vjust=0.5, size = 12,face = "bold") )+
+  ylab("cases")+theme(axis.title.y = element_text(hjust = 0.5,size = 12,face = "bold"))+ theme(plot.title = element_text(size = 14,hjust = 0.5, face="bold"))+
+  theme_bw()
+```
+
+The plot above is a bar plot that provides a visual representation of disease incidence within Hospital XYZ, illustrating the number of cases recorded for various diseases. By mapping the recorded diseases against the number of affected individuals, the plot offers valuable insights into the disease burden experienced by the hospital.
+
+## Box plot
+```{r,echo=FALSE}
+ggplot(ncdc_2024, aes(x = disease, y = cases, color = disease )) +
+  geom_boxplot(linewidth=0.75) +scale_color_manual(values = c("blue", "cyan", "pink", "violet","grey","yellow"), labels=c("Cholera","CS Meningitis","Lassa Fever","Measles","Mpox","Yellow Fever"))+
+  labs(x = "Disease",y = "Cases")+theme_linedraw() + theme(legend.background = element_rect(color = "black"))+
+  theme(plot.title = element_text(hjust = 0.5,size= 14, face = "bold"))+
+  scale_x_discrete(labels=c("Cholera","CS Meningitis","Lassa Fever","Measles","Mpox","Yellow Fever"))+theme_bw()
+
+```
+
+The plot above presents a box plot visualization of disease incidence data for 2024. Each box plot represents the distribution of reported cases for a specific disease over the epidemiology weeks of the year. The colors associated with each box plot on the right side of the graph correspond to the different diseases. A key observation is that the measles box plot exhibits a significantly higher median compared to other diseases. This suggests that the median number of reported measles cases across the year was substantially higher than for most other diseases.
+
+
+Furthermore, the plot reveals a wide range in the number of reported cases across all diseases. The highest number of cases recorded for any disease within this period was 898, while some weeks recorded zero cases for certain diseases.

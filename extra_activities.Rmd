@@ -1,0 +1,30 @@
+---
+ title: "Extracurricular activities "
+ output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+
+
+My name is Roy Falaye,and this is ME
+
+
+
+
+## Basketball
+I began my basketball journey in 2022 during my first year of university (100 level). Initially, I struggled to master the game, but through consistent practice and dedication, I gradually improved my skills. With each game, I learned and grew, refining my techniques and strategies. While I primarily participate in inter-school competitions, basketball remains an integral part of my life.
+
+Unfortunately, in 2023, a hand injury sustained during practice required immediate medical attention. I underwent surgery and subsequently embarked on a rehabilitation program that lasted for several weeks. After a period of recovery, I was thrilled to return to the court and continue pursuing my passion for the sport.
+
+<img src= "C:/Users/DELL/Documents/TKP RPROGRAMMING/RoyFalaye.github.io/balllll.avif" style="width:40%; border:5px solid; color: black; margin-right: 20px" align="bottom">
+
+
+## Violin and Drum 
+
+My musical journey began in year 7 at Chrisland High School in Abuja, where I embarked on learning the violin. To the best of my recollection, I was the sole student who performed solo pieces during school events. However, my musical pursuits were temporarily interrupted when I transitioned to a new school that lacked an orchestra program. Furthermore, my violin sustained damage, further hindering my ability to continue playing.
+
+Fortunately, in 2023, my father's support rekindled my passion for music. He arranged for me to receive instruction from a qualified music teacher. I am delighted to report that I have resumed playing the violin and continue to enjoy the enriching experience.
+
+<img src= "C:/Users/DELL/Documents/TKP RPROGRAMMING/RoyFalaye.github.io/one day like that .jpg" style="width:40%; border:5px solid; color: black; margin-right: 20px" align="bottom">

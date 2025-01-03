@@ -1,0 +1,30 @@
+---
+title: "Roy Falaye"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+<img src= "C:/Users/DELL/Documents/TKP RPROGRAMMING/RoyFalaye.github.io/royyyyyyyyyyy.jpg" style="width:25%; border:5px solid; color: black; margin-right: 20px" align="right">
+
+This is my first website.
+
+### Academics 
+
+
+My name is Roy Falaye Ayorinde, an 18-year-old Yoruba man from Ondo State, Nigeria. As the firstborn child, I take pride in my leadership role within my family. In 2022, I graduated from Chrisland High School, Abuja, Nigeria, as part of the class of 2021-2022. Currently, I'm pursuing a degree in Computer Science at [Bingham University](https://binghamuni.edu.ng/v2/) in the Faculty of Computing, having reached the 300 level (third year).
+
+### Non Academics 
+
+My extracurricular activities revolve around music and basketball. In 2022, during my first year at Bingham University (100 level), I began playing basketball. While initial challenges tested my skills, consistent practice fueled my improvement, allowing me to learn and grow with each game. Although I primarily participate in inter-school competitions, basketball remains a cherished pastime. Unfortunately, in 2023, I encountered a setback after breaking my hand during practice. After undergoing surgery and enduring a rehabilitation period of over a month, I'm happy to report that I've returned to the court and continue to play today.
+
+My musical journey began in year 7 at Chrisland High School, where I played the violin. As far as I can recall, I was the only student who performed solos during school events. Unfortunately, transitioning to a new school that lacked an orchestra and experiencing damage to my violin forced me to put a pause on my musical endeavors. Thankfully, in 2023, my passion for music was reignited when my father arranged for a music instructor. Delighted to be back in the world of music, I continue to play the violin to this day.
+
+```{r,include=FALSE}
+#This page is going to be your home page... In this section, give a catchy summary about yourself... if a college or university read this page, what are the things you would like them to know about you if they are trying to decide if they would offer you a place in their college or university or if they would offer you a scholarship. 
+
+#Include things like the name of the school you are currently attending... your resume if you have one, outstanding projects you have done and what your interests are. In essence, sell yourself to the school! 
+```
+
+

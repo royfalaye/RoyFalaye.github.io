@@ -1,0 +1,16 @@
+name: "Roy Falaye"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "Extracurricular Activities"
+      href: extra_activities.html
+    - text: "Projects"
+      href: projects.html 
+    - icon: fa-envelope fa-lg
+      href: mailto:<royfalaye@gmail.com>
+    - icon: fa-github fa-lg
+      href: https://royfalaye.github.io
+output:
+  html_document:
+    theme: flatly
