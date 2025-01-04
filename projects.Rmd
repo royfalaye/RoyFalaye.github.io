@@ -29,8 +29,13 @@ ggplot(ncdc_2024, aes(x=epid.week, y=cases,color=disease))+
   scale_color_brewer(palette = "Dark2", label = c("Cholera", "CS Meningitis","Lassa Fever","Measles","Mpox","Yellow Fever"))+theme_bw()
 ```
 
-The plot above is a line that visually represents the number of disease incidence reported for every epidemiology week of 2024. It depicts the fluctuating number of reported cases across the epidemiology weeks of the year. The plot reveals an intriguing dynamic between Lassa fever and cholera cases throughout 2024. The data suggests an inverse relationship, where weeks with higher Lassa fever case numbers tend to coincide with lower cholera case numbers, and vice versa.
+The plot above is a line graph that visually represents the number of disease incidents reported for each epidemiology week of 2024. It effectively illustrates the fluctuating trends in reported cases throughout the year.
 
+A fascinating dynamic emerges from the plot, showcasing an apparent inverse relationship between Lassa fever and cholera cases. Weeks with a higher number of reported Lassa fever cases tend to coincide with lower cholera case numbers, and vice versa.
+
+I generated this graph using the ggplot2 function in R. This powerful function within the ggplot2 package provides a versatile framework for creating elegant and informative data visualizations in R.
+
+To enhance the visual clarity, I employed the scale_color_brewer(palette = "Dark2") function to assign distinct colors to each disease, facilitating easy differentiation between Lassa fever and cholera cases. Other available palettes within the RColorBrewer package include "Set1" and "Oranges," offering a range of color schemes to suit different visualization needs.
 
 ## Bar plot
 ```{r,echo=FALSE}
